@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form 2</title>
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 20px;
+        }
+    
+        .form-container-wide {
+            background-color: #ffffe0; /* Light yellow background */
+            border: 2px solid #000;
+            padding: 20px;
+            width: 600px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            margin: 0 auto;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 1.5em;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 0.85em;
+            color: #333;
+            text-align: center;
+            margin: 5px 0;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"] {
+            width: calc(100% - 20px);
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .small-input {
+            width: calc(50% - 12px);
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            margin: 5px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover,
+        input[type="reset"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <a href ="form-1.html">form-1</a>
+    <div class="form-container-wide">
+        <h2>Registration Form</h2>
+        <p>Of course, all submitted information is kept in the strictest confidence.<br>
+           You always retain control of your information with D.W. Simpson & Co.</p>
+        <p>Our services are always at no cost to you.</p>
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" required>
+
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city" class="small-input">
+            <label for="state" style="display: inline-block; width: 20%;">State/Province:</label>
+            <input type="text" id="state" name="state" class="small-input">
+
+            <label for="zip">Zip Code:</label>
+            <input type="text" id="zip" name="zip">
+
+            <label for="country">Country:</label>
+            <input type="text" id="country" name="country">
+
+            <label for="phoneH">Phone (H):</label>
+            <input type="tel" id="phoneH" name="phoneH">
+            <label for="fax">Fax:</label>
+            <input type="text" id="fax" name="fax">
+
+            <label for="phoneW">Phone (W):</label>
+            <input type="tel" id="phoneW" name="phoneW">
+
+            <label for="email2">Email:</label>
+            <input type="email" id="email2" name="email2" required>
+
+            <label for="company">Company Name (optional):</label>
+            <input type="text" id="company" name="company">
+
+            <label for="region">Desired Region:</label>
+            <input type="text" id="region" name="region">
+
+            <!-- <H3>PROFESSIONAL DESIGNATIONS EARNED:</H3>
+            <input type="checkbox"><label for="ACAS">ACAS</label> <input type="checkbox"><label for="FCAS">FCAS</label>
+            <input type="checkbox"><label for="ASA">ASA</label><input type="checkbox"><label for="FSA">FSA</label>
+            <input type="checkbox"><label for="EA">EA</label> <input type="checkbox"><label for="CFA">CFA</label>
+            <input type="checkbox"><label for="MBA">MBA</label> <input type="checkbox"><label for="MAAA">MAAA</label>
+            <input type="checkbox"><label for="FIA">FIA</label> <input type="checkbox"><label for="FCIA">FCIA</label>
+            <input type="checkbox"><label for="FIAA">FIAA</label> <input type="checkbox"><label for="Financial Engineer">Financial Engineer</label>
+            <input type="checkbox"><label for="M.S">M.S</label> <input type="checkbox"><label for="Ph.D">Ph.d</label>
+            <input type="checkbox"><label for="Data Mining">Data Mining</label> <input type="checkbox"><label for="Quant">Quant</label>
+            <br><br> -->
+            <h3>PROFESSIONAL DESIGNATIONS EARNED:</h3>
+<div class="checkbox-container">
+    <!-- Row 1 -->
+    <div class="checkbox-row">
+        <input type="checkbox" id="ACAS"><label for="ACAS">ACAS</label>
+        <input type="checkbox" id="FCAS"><label for="FCAS">FCAS</label>
+        <input type="checkbox" id="ASA"><label for="ASA">ASA</label>
+        <input type="checkbox" id="FSA"><label for="FSA">FSA</label>
+        <input type="checkbox" id="EA"><label for="EA">EA</label>
+    </div>
+    <!-- Row 2 -->
+    <div class="checkbox-row">
+        <input type="checkbox" id="CFA"><label for="CFA">CFA</label>
+        <input type="checkbox" id="MBA"><label for="MBA">MBA</label>
+        <input type="checkbox" id="MAAA"><label for="MAAA">MAAA</label>
+        <input type="checkbox" id="FIA"><label for="FIA">FIA</label>
+        <input type="checkbox" id="FCIA"><label for="FCIA">FCIA</label>
+    </div>
+    <!-- Row 3 -->
+    <div class="checkbox-row">
+        <input type="checkbox" id="FIAA"><label for="FIAA">FIAA</label>
+        <input type="checkbox" id="FinancialEngineer"><label for="FinancialEngineer">Financial Engineer</label>
+        <input type="checkbox" id="MS"><label for="MS">M.S</label>
+        <input type="checkbox" id="PhD"><label for="PhD">Ph.D</label>
+        <input type="checkbox" id="DataMining"><label for="DataMining">Data Mining</label>
+        <input type="checkbox" id="Quant"><label for="Quant">Quant</label>
+    </div>
+</div>
+
+<style>
+    .checkbox-container {
+        max-width: 600px;
+    }
+
+    .checkbox-row {
+        display: flex;
+        gap: 10px; /* Space between each checkbox and label */
+        margin-bottom: 10px; /* Space between rows */
+    }
+
+    .checkbox-row input[type="checkbox"],
+    .checkbox-row label {
+        display: inline-block;
+        margin-right: 5px;
+    }
+</style>
+
+
+            <label for="other DESIGNATIONS">Other Designation: </label><input type="text">
+
+
+
+
+
+
+            <br><br>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </form>
+    </div>
+</body>
+</html>
